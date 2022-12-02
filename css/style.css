@@ -61,7 +61,7 @@ a  {
 
 /* start */
 
-
+/* header */
 
 .logo {
   display: block;
@@ -97,6 +97,7 @@ a  {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .wrapper{
@@ -207,5 +208,57 @@ header {
 }
 
 /* end burger menu */
+
+}
+
+@media screen and (max-width: 375px){
+
+  header {
+    justify-content: end;
+    padding: 20px 20px 0 20px;
+  }
+
+  header.active {
+    justify-content: space-between;
+   
+  }
+
+  .wrapper{
+    padding: 0;
+  }
+
+  .menu {
+    height: 100%;
+ 
+  }
+
+  .menu.active {
+    padding: 120px 0 0 20px;
+  }
+
+  .menu-btn {
+    position: fixed;
+    top: 20px;
+  }
+
+  .menu-btn.active {
+    position: relative;
+    top: 0;
+  } 
+
+  .menu-btn span{
+    background-color: rgb(31, 27, 27);
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo.active {
+    display:block;
+    width: 80px;
+    height: 48px;
+
+  }
 
 }
