@@ -56,10 +56,17 @@ table {
 a  {
   text-decoration: none;
   cursor: pointer;
-  color: #005BBB;
+  color: var(--ua-blue);
 }
 
 /* start */
+
+:root {
+  --ua-blue: #005BBB;
+  --ua-yellow:#FFD500;
+  --white: #FFFFFF;
+}
+
 
 /* header */
 
@@ -89,8 +96,46 @@ a  {
 .header-text{
   font-size: 28px;
   line-height: 39px;
-  color: #005BBB;
+  color: var(--ua-blue);
 }
+
+/* slick custom*/
+
+.slick-gallery{
+  margin: 0 80px 80px;
+}
+
+.slick-gallery img {
+  height: 200px;
+}
+
+.slick-track{
+  margin-bottom: 40px;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-dots li{
+  margin: 0 8px;
+}
+
+.slick-dots button {
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  border-radius: 100%;
+  border: 1px solid var(--ua-blue);
+  background-color: var(--white);
+}
+
+.slick-active button{
+  background-color: var(--ua-blue);
+}
+
+
 
 @media screen and (max-width: 1024px){
 
@@ -98,7 +143,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  margin-bottom: 80px;
 }
 
 .wrapper{
@@ -115,7 +160,7 @@ header {
 }
 
 .logo.active path {
-  fill: #fff;
+  fill: var(--white);
 
 }
 
@@ -140,7 +185,7 @@ header {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color:#005BBB;
+	background-color: var(--ua-blue);
 	transition: all 0.5s;
 }
 
@@ -158,12 +203,12 @@ header {
 .menu-btn.active span:nth-of-type(2) {
   top: 50%;
   transform: translate(-50%, 0%) rotate(45deg); 
-  background-color: #fff;
+  background-color: var(--white);
 }
 .menu-btn.active span:nth-of-type(3) {
   top: 50%;
   transform: translate(-50%, 0%) rotate(-45deg); 
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 /* Меню, яке буде зʼявлятися */
@@ -174,7 +219,7 @@ header {
 	left: 0;
 	width: 100%;
 	height: 516px;
-  background: #005BBB;
+  background: var(--ua-blue);
 	transform: translateY(-100%);
 	transition: transform 0.5s; 
 }
@@ -254,7 +299,7 @@ header {
   } 
 
   .menu-btn span{
-    background-color: #fff;
+    background-color: var(--white);
   }
 
   .logo {
@@ -267,5 +312,15 @@ header {
     height: 48px;
 
   }
+
+/* slick */
+
+.slick-gallery img {
+  height: 180px;
+}
+
+.slick-gallery{
+  margin: 0;
+}
 
 }
