@@ -1,0 +1,211 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a  {
+  text-decoration: none;
+  cursor: pointer;
+  color: #005BBB;
+}
+
+/* start */
+
+
+
+.logo {
+  display: block;
+  margin: 80px auto;
+ }
+
+.menu{
+  margin-bottom: 80px;
+}
+
+.menu-list{
+  display: flex;
+  justify-content: center;
+}
+
+.menu-list li {
+  margin: 0 40px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header-text{
+  font-size: 28px;
+  line-height: 39px;
+  color: #005BBB;
+}
+
+@media screen and (max-width: 1024px){
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper{
+  padding: 48px 60px 119px 60px;
+}
+
+.logo {
+  margin: -15px;
+}
+
+.logo.active {
+  z-index: 2;
+  margin-left: -15px;
+}
+
+.logo.active path {
+  fill: #fff;
+
+}
+
+/* burger menu */
+
+
+
+/* Гамбургер іконка */
+
+.menu-btn {
+	width: 48px;
+	height: 48px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+}
+
+.menu-btn span {
+	width: 48px;
+	height: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color:#005BBB;
+	transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 15px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 15px);
+}
+
+/* Змінюємо гамбургер іконку, коли меню відчинено */
+.menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg); 
+  background-color: #fff;
+}
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg); 
+  background-color: #fff;
+}
+
+/* Меню, яке буде зʼявлятися */
+
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 516px;
+  background: #005BBB;
+	transform: translateY(-100%);
+	transition: transform 0.5s; 
+}
+
+.menu.active {
+	transform: translateY(0);
+  transition: transform 0.5s;
+  padding-top: 228px;
+  padding-left: 65px;
+}
+
+.menu-list{
+  flex-direction: column;
+}
+
+.menu-list li {
+  margin: 0;
+}
+
+.menu li:nth-child(1){
+  margin-bottom: 48px;
+}
+
+.menu li:nth-child(2){
+  margin-bottom: 48px;
+}
+
+.menu a {
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* end burger menu */
+
+}
