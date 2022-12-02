@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" href="css/style.css" />
     <title>Project_3</title>
 </head>
@@ -34,6 +35,54 @@
         </div>
     </header>
         <main>
+            <div class="slick-gallery">
+                <div><img src="img/image1.png" alt="1"></div>
+                <div><img src="img/image2.png" alt="2"></div>
+                <div><img src="img/image3.png" alt="3"></div>
+                <div><img src="img/image2.png" alt="2"></div>
+                <div><img src="img/image1.png" alt="1"></div>
+                <div><img src="img/image3.png" alt="3"></div>
+            </div>
+        <div class="container">
+            <p class="header-text">We are an architectural firm with a long history and extensive experience. Our intention is to help Ukrainians rebuild their homes and buildings even better than they were before the war.</p>
+            <p class="header-text">Please take a look at our history and contact us if you are intrested. We would be really glad to join the help to Ukraine as we can. </p>
+            <p class="header-text">Glory to Ukraine!</p>
+        </div>
+        <div class="container">
+            <p class="header-text">We are an architectural firm with a long history and extensive experience. Our intention is to help Ukrainians rebuild their homes and buildings even better than they were before the war.</p>
+            <p class="header-text">Please take a look at our history and contact us if you are intrested. We would be really glad to join the help to Ukraine as we can. </p>
+            <p class="header-text">Glory to Ukraine!</p>
+        </div>
+        <div class="container">
+            <p class="header-text">We are an architectural firm with a long history and extensive experience. Our intention is to help Ukrainians rebuild their homes and buildings even better than they were before the war.</p>
+            <p class="header-text">Please take a look at our history and contact us if you are intrested. We would be really glad to join the help to Ukraine as we can. </p>
+            <p class="header-text">Glory to Ukraine!</p>
+        </div>
+        <div class="container">
+            <p class="header-text">We are an architectural firm with a long history and extensive experience. Our intention is to help Ukrainians rebuild their homes and buildings even better than they were before the war.</p>
+            <p class="header-text">Please take a look at our history and contact us if you are intrested. We would be really glad to join the help to Ukraine as we can. </p>
+            <p class="header-text">Glory to Ukraine!</p>
+        </div>
+        <div class="container">
+            <p class="header-text">We are an architectural firm with a long history and extensive experience. Our intention is to help Ukrainians rebuild their homes and buildings even better than they were before the war.</p>
+            <p class="header-text">Please take a look at our history and contact us if you are intrested. We would be really glad to join the help to Ukraine as we can. </p>
+            <p class="header-text">Glory to Ukraine!</p>
+        </div>
+        <div class="container">
+            <p class="header-text">We are an architectural firm with a long history and extensive experience. Our intention is to help Ukrainians rebuild their homes and buildings even better than they were before the war.</p>
+            <p class="header-text">Please take a look at our history and contact us if you are intrested. We would be really glad to join the help to Ukraine as we can. </p>
+            <p class="header-text">Glory to Ukraine!</p>
+        </div>
+        <div class="container">
+            <p class="header-text">We are an architectural firm with a long history and extensive experience. Our intention is to help Ukrainians rebuild their homes and buildings even better than they were before the war.</p>
+            <p class="header-text">Please take a look at our history and contact us if you are intrested. We would be really glad to join the help to Ukraine as we can. </p>
+            <p class="header-text">Glory to Ukraine!</p>
+        </div>
+        <div class="container">
+            <p class="header-text">We are an architectural firm with a long history and extensive experience. Our intention is to help Ukrainians rebuild their homes and buildings even better than they were before the war.</p>
+            <p class="header-text">Please take a look at our history and contact us if you are intrested. We would be really glad to join the help to Ukraine as we can. </p>
+            <p class="header-text">Glory to Ukraine!</p>
+        </div>
         <div class="container">
             <p class="header-text">We are an architectural firm with a long history and extensive experience. Our intention is to help Ukrainians rebuild their homes and buildings even better than they were before the war.</p>
             <p class="header-text">Please take a look at our history and contact us if you are intrested. We would be really glad to join the help to Ukraine as we can. </p>
@@ -45,5 +94,37 @@
 
     </div>
  <script src="js/index.js"></script>
+ <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+ <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+ <script type="text/javascript" src="slick/slick.min.js"></script>
+
+ <script type="text/javascript">
+   $(document).ready(function(){
+     $('.slick-gallery').slick({
+        autoplay: true,
+        dots: true,
+        prevArrow: false,
+        nextArrow: false,
+        slidesToShow: 3,
+        zIndex: 0,
+        responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 375,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+     });
+   });
+ </script>
 </body>
 </html>

@@ -98,6 +98,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .wrapper{
@@ -215,16 +216,21 @@ header {
 
   header {
     justify-content: end;
-    padding: 20px 20px 0 20px;
+    padding: 0 20px 0 20px;
   }
 
   header.active {
     justify-content: space-between;
-   
+    padding-top: 20px;
   }
 
   .wrapper{
     padding: 0;
+  }
+
+  .logo {
+    position: fixed;
+    top: 40px;
   }
 
   .menu {
@@ -233,6 +239,7 @@ header {
   }
 
   .menu.active {
+    z-index: 1;
     padding: 120px 0 0 20px;
   }
 
@@ -242,12 +249,12 @@ header {
   }
 
   .menu-btn.active {
-    position: relative;
-    top: 0;
+    position: fixed;
+    right: 20px;
   } 
 
   .menu-btn span{
-    background-color: rgb(31, 27, 27);
+    background-color: #fff;
   }
 
   .logo {
