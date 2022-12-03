@@ -140,10 +140,10 @@ a  {
 @media screen and (max-width: 1024px){
 
 header {
+  margin-bottom: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 80px;
 }
 
 .wrapper{
@@ -151,12 +151,13 @@ header {
 }
 
 .logo {
-  margin: -15px;
+  margin: 0;
+  margin-left: -15px;
 }
 
 .logo.active {
   z-index: 2;
-  margin-left: -15px;
+  
 }
 
 .logo.active path {
@@ -173,7 +174,9 @@ header {
 .menu-btn {
 	width: 48px;
 	height: 48px;
-	position: relative;
+	position: absolute;
+  top: 48px;
+  right: 60px;
 	z-index:2;
 	overflow: hidden;
 }
@@ -230,6 +233,7 @@ header {
   padding-top: 228px;
   padding-left: 65px;
   z-index: 1;
+  overflow: hidden;
 }
 
 .menu-list{
@@ -262,6 +266,10 @@ header {
   margin: 0 0 80px;
 }
 
+body.active{
+  overflow:hidden
+} 
+
 }
 
 @media screen and (max-width: 375px){
@@ -273,6 +281,7 @@ header {
 
   header.active {
     justify-content: space-between;
+    align-items: center;
     padding: 0 20px 0 20px;
   }
 
@@ -281,13 +290,13 @@ header {
   }
 
   .logo {
-    position: fixed;
-    top: 40px;
+    display: none;
+    margin-top: 24px;
+    margin-left: -13px;
   }
 
   .menu {
     height: 100%;
- 
   }
 
   .menu.active {
@@ -295,21 +304,12 @@ header {
   }
 
   .menu-btn {
-    position: fixed;
     top: 20px;
-  }
-
-  .menu-btn.active {
-    position: fixed;
     right: 20px;
-  } 
+  }
 
   .menu-btn span{
     background-color: var(--white);
-  }
-
-  .logo {
-    display: none;
   }
 
   .logo.active {
