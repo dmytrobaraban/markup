@@ -256,18 +256,24 @@ header {
 
 /* end burger menu */
 
+/* slick */
+
+.slick-gallery{
+  margin: 0 0 80px;
+}
+
 }
 
 @media screen and (max-width: 375px){
 
   header {
     justify-content: end;
-    padding: 0 20px 0 20px;
+    margin: 0;
   }
 
   header.active {
     justify-content: space-between;
-    padding-top: 20px;
+    padding: 0 20px 0 20px;
   }
 
   .wrapper{
