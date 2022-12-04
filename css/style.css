@@ -154,17 +154,18 @@ a  {
   margin: 0 auto;
 }
 
-.box p:nth-child(3){
+.box-main{
   margin-bottom: 80px;
 }
 
-.box p:nth-child(-n+2){
+.box-main p:nth-child(-n+2){
   padding-bottom: 20px;
 }
 
 .container-box{
   border-top: 1px solid var(--ua-blue);
   border-bottom: 1px solid var(--ua-blue);
+  padding-bottom: 80px;
 }
 
 .main-text{
@@ -173,44 +174,93 @@ a  {
   color: var(--ua-blue);
 }
 
-.container-box h2{
+.container-box h2, footer h3{
   font-weight: 900;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 40px;
+  line-height: 49px;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--ua-blue);
   text-transform: uppercase;
   padding: 16px 0;
-  width: 452px;
+  width: 500px;
   margin: 0 auto 40px;
   border-bottom: 1px solid var(--ua-blue);
 }
 
+.container-box__main{
+  display: flex;
+  justify-content: space-between;
+}
 
+.container-item{
+  max-width: 500px;
+  padding: 40px;
+  background-color: var(--ua-blue);
+  display: flex;
+  align-items: center;
+  border-left: 10px solid var(--ua-yellow)
+}
 
+.container-item__text{
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--white);
+}
+
+.container-item__text span{
+  font-size: 48px;
+}
 
 /* end main */
 
 /* footer */
 
 footer {
-  max-width: 1440px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
-footer h3 {
-  font-weight: 900;
-  font-size: 30px;
-  line-height: 37px;
+.send-message{
+  position: relative;
+  height: 120px;
+  border: 1px solid var(--ua-blue);
+  align-items: center;
+  margin-bottom: 160px;
+}
+
+.message-us{
+  resize: none;
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.message-us::placeholder{
+  font-size: 18px;
+  line-height: 22px;
+  opacity: 0.5;
+  color: #005BBB;
+  transform: translateY(200%);
+  padding-left: 30px;
+}
+
+.textarea-btn{
+  font-size: 28px;
+  line-height: 34px;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--ua-blue);
   text-transform: uppercase;
-  padding: 16px 0;
-  width: 452px;
-  margin: 0 auto 40px;
-  border-bottom: 1px solid var(--ua-blue);
+  color: var(--white);
+  background-color: var(--ua-blue);
+  padding: 13px 56px;
+  border: none;
+  position: absolute;
+  top: 25%;
+  right: 30px;
 }
 
 @media screen and (max-width: 1024px){
