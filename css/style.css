@@ -61,6 +61,9 @@ a  {
   color: var(--ua-blue);
 }
 
+body.active{
+  overflow:hidden
+} 
 
 /* start */
 
@@ -88,7 +91,7 @@ a  {
 }
 
 .menu-list li {
-  margin: 0 40px;
+  margin:0 40px;
 }
 
 /* end header */
@@ -104,7 +107,6 @@ a  {
 
 .slick-gallery img {
   height: 200px;
-
 }
 
 .slick-track{
@@ -125,8 +127,7 @@ a  {
 }
 
 .slick-dots button {
-  width: 20px;
-  height: 20px;
+  padding: 9px;
   font-size: 0;
   border-radius: 100%;
   border: 1px solid var(--ua-blue);
@@ -169,7 +170,7 @@ a  {
 }
 
 .main-text{
-  font-size: 24px;
+  font-size: 28px;
   line-height: 140%;
   color: var(--ua-blue);
 }
@@ -183,7 +184,7 @@ a  {
   color: var(--ua-blue);
   text-transform: uppercase;
   padding: 16px 0;
-  width: 500px;
+  max-width: 500px;
   margin: 0 auto 40px;
   border-bottom: 1px solid var(--ua-blue);
 }
@@ -210,6 +211,7 @@ a  {
 
 .container-item__text span{
   font-size: 48px;
+  
 }
 
 /* end main */
@@ -244,7 +246,7 @@ footer {
   line-height: 22px;
   opacity: 0.5;
   color: #005BBB;
-  transform: translateY(200%);
+  transform: translateY(49px);
   padding-left: 30px;
 }
 
@@ -259,7 +261,7 @@ footer {
   padding: 13px 56px;
   border: none;
   position: absolute;
-  top: 25%;
+  top: 30px;
   right: 30px;
 }
 
@@ -292,8 +294,6 @@ header {
 }
 
 /* burger menu */
-
-
 
 /* Гамбургер іконка */
 
@@ -392,9 +392,24 @@ header {
   margin: 0 0 80px;
 }
 
-body.active{
-  overflow:hidden
-} 
+.main-text{
+  font-size: 24px;
+}
+
+.container-box h2, footer h3{
+  font-size: 30px;
+  line-height: 37px;
+  max-width: 452px;
+}
+
+.container-box__main{
+  flex-direction: column;
+  row-gap: 28px;
+}
+
+.container-item{
+ max-width: none;
+}
 
 }
 
@@ -412,7 +427,7 @@ body.active{
   }
 
   .wrapper{
-    padding: 0;
+   padding: 0;
   }
 
   .logo {
@@ -453,6 +468,75 @@ body.active{
 
 .slick-gallery{
   margin: 0;
+}
+
+.slick-container{
+  margin-bottom: 48px;
+}
+
+.slick-dots button{
+  padding: 3px;
+}
+
+.slick-list{
+  margin-bottom: -16px;
+}
+
+/* end slick */
+
+.box{
+  padding: 0 20px;
+}
+
+.main-text{
+  font-size: 16px;
+}
+
+.box-main{
+  margin-bottom: 48px;
+}
+
+.container-box{
+  padding-bottom: 48px;
+}
+
+.container-box h2, footer h3{
+  font-size: 20px;
+  line-height: 24px;
+  max-width: 100%;
+}
+
+.container-box__main{
+  row-gap: 24px;
+}
+
+.container-item__text{
+  font-size: 16px;
+}
+.container-item__text span{
+  display: block;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+footer {
+  padding: 0 20px;
+}
+
+.send-message{
+  height: 150px;
+}
+
+.message-us::placeholder{
+  text-align: center;
+  transform: translateY(20px);
+  padding: 0;
+}
+
+.textarea-btn{
+  margin-top: 20px;
+  position: static;
+  width: 100%;
 }
 
 }
