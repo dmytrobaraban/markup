@@ -1,4 +1,4 @@
-// burger menu
+// burger-menu
 
 let menuBtn = document.querySelector('.menu-btn');
 let menu = document.querySelector('.menu');
